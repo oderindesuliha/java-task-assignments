@@ -23,22 +23,27 @@ import java.util.Scanner;
 	
 	int slices = 0;
 	int price = 0;
+	String pizzaName = "";
 	switch(pizzaType){
 		case 1:	
 			slices = 4;
 			price = 2500;
+			pizzaName = "Sapa size";
 			break;
 		case 2:	
 			slices = 6;
 			price = 2900;
+			pizzaName = "Small money";
 			break;
 		case 3:	
 			slices = 8;
 			price = 4000;
+			pizzaName = "Big boys";
 			break;
 		case 4:	
 			slices = 12;
 			price = 5200;
+			pizzaName = "Odogwu";
 			break;	
 
 }
@@ -47,14 +52,14 @@ import java.util.Scanner;
 	int numberOfBoxes = totalSlices / slices;
 	if(totalSlices % slices != 0){
 		numberOfBoxes += 1;
-	System.out.println("Your order is " + numberOfBoxes + " boxes");
+	System.out.println("Your order is " + numberOfBoxes  + " " + pizzaName + " box(es)");
 	}
 
 	int slicesLeft = numberOfBoxes * slices - totalSlices;
 	int totalPrice = numberOfBoxes * price;
 	
-	System.out.println("Number of slices left after serving is " + slicesLeft + "slices");
-	System.out.println("Your order is " + numberOfBoxes + " pizza boxes for " + totalPrice + ".");
+	System.out.println("Number of slices left after serving is " + slicesLeft + " " + "slices");
+	System.out.println("Your order is " + numberOfBoxes  + " " + pizzaName + " pizza box(es) for " + totalPrice + ".");
 
 	}
 }

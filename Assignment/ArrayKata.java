@@ -5,8 +5,8 @@ public class ArrayKata{
 	public static void main(String... args){
 		
 	int [] input = {30,60,21,41};
-	System.out.println("The largest element is: " +maximumIn(input));
-	System.out.println("The lowest element is: " +minimumIn(input));
+	System.out.println("The Largest element is: " +maximumIn(input));
+	System.out.println("The Smallest element is: " +minimumIn(input));
 	System.out.println("The Sum is: " +sumOf(input));
 	System.out.println("The Sum of even numbers is: " +sumOfEvenNumbers(input));
 	System.out.println("The Sum of odd numbers is: " +sumOfOddNumbers(input));

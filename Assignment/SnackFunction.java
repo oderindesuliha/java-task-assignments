@@ -1,14 +1,15 @@
-public class SnackFunction{
-
+import java.util.Scanner;
+	public class SnackFunction{
 
 	public static void main(String [] args){
-		System.out.println(logisticsServices(25));
-		System.out.println(logisticsServices(56));
-		System.out.println(logisticsServices(62));
-		System.out.println(logisticsServices(80));
+		System.out.print("enter successful delivery: ");
+		Scanner userInput = new Scanner(System.in);
+		int input = userInput.nextInt();
+	
+	
+	System.out.print("The rider's pay is: " + logisticsServices(input));
 	}
 
-	
 	public static int logisticsServices(int input){
 		
 		int ridersPayment = 0;	
